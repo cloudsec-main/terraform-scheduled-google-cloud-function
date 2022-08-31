@@ -64,7 +64,7 @@ resource "google_cloud_scheduler_job" "job" {
   name             = "cloud-function-tutorial-scheduler"
   description      = "Trigger the ${google_cloudfunctions_function.function.name} Cloud Function every 10 mins."
   schedule         = "*/10 * * * *" # Every 10 mins
-  time_zone        = "Europe/Dublin"
+  time_zone        = "America/New_York"
   attempt_deadline = "320s"
 
   http_target {
