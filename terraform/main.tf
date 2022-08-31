@@ -1,11 +1,11 @@
 provider "google" {
-  project = "diarmuidie"
-  region  = "europe-west1"
+  project = "CloudSecDemo"
+  region  = "us-central1"
   version = "~> 3.18"
 }
 
 resource "google_storage_bucket" "bucket" {
-  name = "cloud-function-tutorial-bucket" # This bucket name must be unique
+  name = "cloud-function-cloudsecdemo-bucket" # This bucket name must be unique
 }
 
 data "archive_file" "src" {
